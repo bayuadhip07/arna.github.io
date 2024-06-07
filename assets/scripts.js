@@ -55,20 +55,20 @@ function setel(){audio.play();} function setel2(){bgm.play();} function sjawab()
 var aa=0,katangetik;
 function ngetik() {
   new TypeIt("#kalimat", {
-    strings: ["" + katangetik], startDelay: 100, speed: 20, cursor: true,
+    strings: ["" + katangetik], startDelay: 50, speed: 10, cursor: true,
     afterComplete: function(){
         kalimat.innerHTML = katangetik;
         kalimatc.style="margin-top:30px;margin-bottom:10px";
-        setTimeout(ngetik2,300);
+        setTimeout(ngetik2,500);
     },}).go();
 }
 var ai=0,katangetik2;
 function ngetik2() {
     new TypeIt("#kalimatc", {
-    strings: ["" + katangetik2], startDelay: 100, speed: 20, cursor: true,
+    strings: ["" + katangetik2], startDelay: 50, speed: 10, cursor: true,
     afterComplete: function(){
         kalimatc.innerHTML = katangetik2;
-        setInterval(berjatuhan,150);
+        setInterval(berjatuhan,200);
         //setTimeout(tombol,300);
     },}).go();
 }
